@@ -2,7 +2,6 @@ package rf
 
 import (
 	"fmt"
-	// "runtime"
 	"sync"
 )
 
