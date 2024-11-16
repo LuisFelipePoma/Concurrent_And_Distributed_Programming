@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "3ce1c44f-59cc-451a-bfa2-224479a07846",
+		"name": "Websockets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17885402"
+	},
+	"item": [
+		{
+			"name": "Messages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":\"Saludos!!!!\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

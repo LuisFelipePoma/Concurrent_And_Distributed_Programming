@@ -1,0 +1,6 @@
+go mod init code-ws
+
+go mod tidy
+
+
+go get -u -v github.com/gorilla/websocket
