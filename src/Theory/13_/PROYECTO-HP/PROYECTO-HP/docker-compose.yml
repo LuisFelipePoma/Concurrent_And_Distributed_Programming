@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  nodo1:
+    build:
+      context: ./nodo1
+      dockerfile: Dockerfile
+    ports:
+      - "19002:9002"
+    depends_on:
+      - nodo2
+    networks:
+      my_network:
+        ipv4_address: 172.20.0.2
+  nodo2:
+    build:
+      context: ./nodo2
+      dockerfile: Dockerfile
+    ports:
+      - "29002:9002"
+    depends_on:
+      - nodo3
+    networks:
+      my_network:
+        ipv4_address: 172.20.0.3
+  nodo3:
+    build:
+      context: ./nodo3
+      dockerfile: Dockerfile
+    ports:
+      - "39002:9002"    
+    networks:
+      my_network:
+        ipv4_address: 172.20.0.4
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.20.0.0/24"

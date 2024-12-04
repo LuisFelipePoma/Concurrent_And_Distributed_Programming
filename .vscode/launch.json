@@ -1,0 +1,83 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Satellite",
+			"type": "go",
+			"request": "launch",
+			"console": "integratedTerminal",
+			"mode": "debug",
+			"program": "${workspaceFolder}/src/Exercises/TF/satellite/202110902-satellite.go",
+			// Add env varialbe
+			"args": [
+				"8082",
+				"8083",
+				"8084",
+				"8085"
+			]
+		},
+		{
+			"name": "Launch Mecha 8082",
+			"type": "go",
+			"request": "launch",
+			"console": "integratedTerminal",
+			"mode": "debug",
+			"program": "${workspaceFolder}/src/Exercises/TF/mecha/202110902-mecha.go",
+			"args": [
+				"0",
+				"8082",
+				"8083",
+				"8084",
+				"8085"
+			]
+		},
+		{
+			"name": "Launch Mecha 8083",
+			"type": "go",
+			"request": "launch",
+			"console": "integratedTerminal",
+			"mode": "debug",
+			"program": "${workspaceFolder}/src/Exercises/TF/mecha/202110902-mecha.go",
+			"args": [
+				"1",
+				"8083",
+				"8082",
+				"8084",
+				"8085"
+			]
+		},
+		{
+			"name": "Launch Mecha 8084",
+			"type": "go",
+			"request": "launch",
+			"console": "integratedTerminal",
+			"mode": "debug",
+			"program": "${workspaceFolder}/src/Exercises/TF/mecha/202110902-mecha.go",
+			"args": [
+				"2",
+				"8084",
+				"8082",
+				"8083",
+				"8085"
+			]
+		},
+		{
+			"name": "Launch Mecha 8085",
+			"type": "go",
+			"request": "launch",
+			"console": "integratedTerminal",
+			"mode": "debug",
+			"program": "${workspaceFolder}/src/Exercises/TF/mecha/202110902-mecha.go",
+			"args": [
+				"3",
+				"8085",
+				"8082",
+				"8083",
+				"8084"
+			]
+		},
+	]
+}
